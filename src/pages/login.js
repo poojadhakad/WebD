@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
-import {Image} from "../images/avatar.jpg"
+import {Image} from "../images/ava.png"
 
 
 const GbiBridged = () => {
