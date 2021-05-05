@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
+import {Image} from "../images/avatar.jpg"
 
 
 const GbiBridged = () => {
@@ -34,20 +35,22 @@ return (
 
 
 <BgImage image={pluginImage} className="masthead" >
+
 <>
       <Layout>
-      
+      <img src={Image} className="avatar" />
           <div className={styles.container}>
             <h1>ADMIN LOGIN</h1>
+          
             <Form>
-
+             
               <div class="form-group" className={styles.div1}>
 
                 <label className={styles.div2} for="exampleInputEmail1">Email address</label>
                 <div className={styles.email}>
                   <input className={styles.box} type="email" class="form-control" id="exampleInputEmail1" aria-label="large" aria-describedby="emailHelp" placeholder="Enter email"></input>
 
-                  <small className={styles.div3} id="emailHelp" class="form-text text-muted">
+                  <small  id="emailHelp" class="form-text text-muted">
                     We'll never share your email with anyone else.</small>
                 </div>
               </div>
@@ -59,7 +62,7 @@ return (
                 <input className={styles.div1} type="checkbox" class="form-check-input" id="exampleCheck1"></input>
                 <label className={styles.div1} class="form-check-label" for="exampleCheck1">Check me out</label>
               </div>
-              <button className={styles.div6} type="submit" class="btn btn-success"><Link to="/admin.panel">Login</Link></button>
+              <button className={styles.div6} type="submit" ><Link to="/admin.panel">Login</Link></button>
 
             </Form>
           </div>
